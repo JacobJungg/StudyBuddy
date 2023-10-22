@@ -3,7 +3,6 @@
  * Main page
  */
 
-
 "use client";
 
 import * as z from "zod";
@@ -35,6 +34,8 @@ const RootPage = () => {
 
 
     return (
+        //Margain move everything down (to close to header)
+        <div className="mt-4">
         <div>
         <Heading
             title="Conversation"
@@ -43,6 +44,7 @@ const RootPage = () => {
             iconColor="text-violet-500"
             bgColor="bg-violet-500/10"
         />
+        
               <div className="px-4 lg:px-8">
             <div>
                 <Form {...form}>
@@ -90,6 +92,8 @@ const RootPage = () => {
 
         </div>
         </div>
+        </div>
+
         
     );
 }
