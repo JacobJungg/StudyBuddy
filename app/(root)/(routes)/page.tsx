@@ -6,7 +6,7 @@
 "use client";
 
 import * as z from "zod";
-import { MessageSquare } from "lucide-react";
+import { MessagesSquare  } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { Heading } from "@/components/heading";
 import { Button } from "@/components/ui/button";
@@ -37,10 +37,11 @@ const RootPage = () => {
         //Margain move everything down (to close to header)
         <div className="mt-4">
         <div>
+
         <Heading
             title="Conversation"
             description="Our most advanced conversation model."
-            icon={MessageSquare}
+            icon={MessagesSquare }
             iconColor="text-violet-500"
             bgColor="bg-violet-500/10"
         />
