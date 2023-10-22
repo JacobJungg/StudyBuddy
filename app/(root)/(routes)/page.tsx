@@ -1,4 +1,8 @@
-import { UserButton } from "@clerk/nextjs"
+/**
+ * StudyBuddy Jacob Jung
+ * Defualt page empty for now
+ * Maybe put dashboard
+ */
 
 const RootPage = () => {
     return (

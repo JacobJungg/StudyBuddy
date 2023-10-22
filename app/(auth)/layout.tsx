@@ -1,4 +1,7 @@
-//Affects all layouts of (routes)
+/**
+ * StudyBuddy Jacob Jung
+ * Centers contents in folder (SignUp and SignIn)
+ */
 
 const AuthLayout = ({
     children
