@@ -1,19 +1,32 @@
 /**
  * StudyBuddy Jacob Jung
- * Centers contents in folder (SignUp and SignIn)
+ * 
+ * Landing page if havnt signed in
+ * Add clerk form for sign up in middle of screen
+ * Will redirect to [[...sign-in]] or [[...sign-up]]
  */
 
+import { Navbar } from "@/components/navbar"
+import { Sidebar } from "@/components/sidebar";
+
 const AuthLayout = ({
-    children
-  }: {
-    children: React.ReactNode;
-  }) => {
-    return ( 
-    //Centers
-      <div className="flex justify-center items-center h-full">
-        {children}
+  children
+}: {
+  children: React.ReactNode;
+}) => {
+  return ( 
+    <div className="h-full">
+      <Navbar />
+      <div className="hidden md:flex mt-16 h-full w-20 flex-col fixed inset-y-0">
+      <Sidebar />
       </div>
-     );
-  }
-   
-  export default AuthLayout;
+      <main className="md:pl-20 pt-16 h-full">
+        <div className="flex justify-center items-center h-full">
+          {children}
+        </div>
+      </main>
+    </div>
+   );
+}
+ 
+export default AuthLayout;
