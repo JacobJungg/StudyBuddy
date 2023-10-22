@@ -4,15 +4,11 @@
 import Link from "next/link";
 import { UserButton } from "@clerk/nextjs";
 import { Kanit } from "next/font/google";
-import { Sparkles } from "lucide-react";
 
 //Local Imports
 import { cn } from "@/lib/utils";
 import { MobileSidebar } from "@/components/mobile-sidebar";
 import { ModeToggle } from "./mode-toggle";
-import { Button } from "./ui/button";
-
-import { Menu } from "lucide-react";
 
 
 const font = Kanit({ weight: "600", subsets: ["latin"] });

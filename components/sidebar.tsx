@@ -23,7 +23,7 @@ export const Sidebar = () => {
         },
         {
           icon: Plus,
-          href: '/companion/new',
+          href: '/flashcard/new',
           label: "Create",
         },
         {
