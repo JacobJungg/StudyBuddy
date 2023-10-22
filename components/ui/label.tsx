@@ -1,3 +1,8 @@
+/**
+ * StudyBuddy Jacob Jung
+ * Imported from ui.shadcn libary
+ */
+
 "use client"
 
 import * as React from "react"
