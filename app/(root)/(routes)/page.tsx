@@ -50,20 +50,23 @@ const RootPage = () => {
     return (
         //Margain move everything down (to close to header)
         <div className="mt-10">
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <img src="https://media.tenor.com/1VEnfKkMGikAAAAd/lofi-girl-music.gif" />
+  <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+  
+    <div>
+    <Calendar
+        mode="single"
+        selected={date}
+        onSelect={setDate}
+        className="rounded-md border"
+        style={{ width: '300px', height: '365px' }} // Adjust the width and height as needed
+      />
+    </div>
 
+    <div>
+      <img src="https://media.tenor.com/1VEnfKkMGikAAAAd/lofi-girl-music.gif" />
+    </div>
+    </div>
 
-
-
-
-              <Calendar
-            mode="single"
-            selected={date}
-            onSelect={setDate}
-            className="rounded-md border"
-          />
-          </div>
           <div style={{ margin: '0 20px' }}>
 <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
                 <Card>
