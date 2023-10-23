@@ -7,7 +7,7 @@
 
 import * as React from "react"
 import * as z from "zod";
-import { MessagesSquare, Plus  } from "lucide-react";
+import { MessagesSquare, Plus, Calculator, CreditCard, AlarmCheck, Settings, Smile, User  } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { Heading } from "@/components/heading";
 import { Button } from "@/components/ui/button";
@@ -25,7 +25,16 @@ import {
   CardTitle,
 } from "@/components/card"
 
-
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+  CommandSeparator,
+  CommandShortcut,
+} from "@/components/ui/command"
 
 
 
@@ -65,7 +74,56 @@ const RootPage = () => {
     <div>
       <img src="https://media.tenor.com/1VEnfKkMGikAAAAd/lofi-girl-music.gif" />
     </div>
+
+    <div>
+    <Command className="rounded-lg border shadow-md" style={{ width: '300px', height: '365px' }}>
+      <CommandInput placeholder="Type a command or search..." />
+      <CommandList>
+        <CommandEmpty>No results found.</CommandEmpty>
+        <CommandGroup heading="Suggestions">
+          <CommandItem>
+            <AlarmCheck  className="mr-2 h-4 w-4" />
+            <span>Timer</span>
+          </CommandItem>
+          <CommandItem>
+            <Smile className="mr-2 h-4 w-4" />
+            <span>Take a break</span>
+          </CommandItem>
+          <CommandItem>
+            <Calculator className="mr-2 h-4 w-4" />
+            <span>Calculator</span>
+          </CommandItem>
+        </CommandGroup>
+        <CommandSeparator />
+        <CommandGroup heading="Settings">
+          <CommandItem>
+            <User className="mr-2 h-4 w-4" />
+            <span>Profile</span>
+            <CommandShortcut>⌘P</CommandShortcut>
+          </CommandItem>
+          <CommandItem>
+            <CreditCard className="mr-2 h-4 w-4" />
+            <span>Billing</span>
+            <CommandShortcut>⌘B</CommandShortcut>
+          </CommandItem>
+          <CommandItem>
+            <Settings className="mr-2 h-4 w-4" />
+            <span>Settings</span>
+            <CommandShortcut>⌘S</CommandShortcut>
+          </CommandItem>
+        </CommandGroup>
+      </CommandList>
+    </Command>
+
     </div>
+
+    </div>
+
+
+
+
+
+
 
           <div style={{ margin: '0 20px' }}>
 <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
@@ -141,7 +199,7 @@ const RootPage = () => {
               </div>
               </div>
               
-       <div className="mt-10">
+       <div className="mt-24">
         <Heading
             title="Conversation"
             description="Ask your friend a question"
