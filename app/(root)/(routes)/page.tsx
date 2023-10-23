@@ -7,7 +7,7 @@
 
 import * as React from "react"
 import * as z from "zod";
-import { MessagesSquare  } from "lucide-react";
+import { MessagesSquare, Plus  } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { Heading } from "@/components/heading";
 import { Button } from "@/components/ui/button";
@@ -17,6 +17,16 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { formSchema } from "./constants";
 import { Calendar } from "@/components/ui/calendar"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/card"
+
+
+
 
 
 const RootPage = () => {
@@ -53,8 +63,81 @@ const RootPage = () => {
             onSelect={setDate}
             className="rounded-md border"
           />
+          </div>
+          <div style={{ margin: '0 20px' }}>
+<div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+                <Card>
+                  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                    <CardTitle className="text-sm font-medium">
+                      History
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="text-2xl font-bold">When was WW1?</div>
+                    <p className="text-xs text-muted-foreground">
+                      July 28, 1914
+                    </p>
+                  </CardContent>
+                </Card>
 
-</div>
+
+
+                <Card>
+                  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                    <CardTitle className="text-sm font-medium">
+                      Math
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="text-2xl font-bold">Solve for x, 4 + x = 7</div>
+                    <p className="text-xs text-muted-foreground">
+                      x = 3
+                    </p>
+                  </CardContent>
+                </Card>
+
+
+
+                <Card>
+                  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                    <CardTitle className="text-sm font-medium">Science</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="text-2xl font-bold">What is the third element?</div>
+                    <p className="text-xs text-muted-foreground">
+                      Lithium
+                    </p>
+                  </CardContent>
+                </Card>
+
+
+
+                <Card>
+                  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                    <CardTitle className="text-sm font-medium">
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="text-center">
+                  <div
+                    className="plus-icon"
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      width: '100%',
+                      height: '100%',
+                    }}
+                    >
+                      <Plus width="40" height="40" fill="currentColor" />
+                    </div>
+                    <p className="text-xs text-muted-foreground">    
+                      Create new flashcard
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+              </div>
+              
        <div className="mt-10">
         <Heading
             title="Conversation"
