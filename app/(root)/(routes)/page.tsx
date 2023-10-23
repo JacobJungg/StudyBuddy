@@ -7,7 +7,7 @@
 
 import * as React from "react"
 import * as z from "zod";
-import { MessagesSquare, Plus  } from "lucide-react";
+import { MessagesSquare  } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { Heading } from "@/components/heading";
 import { Button } from "@/components/ui/button";
@@ -17,6 +17,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { formSchema } from "./constants";
 import { Calendar } from "@/components/ui/calendar"
+<<<<<<< HEAD
 import {
   Card,
   CardContent,
@@ -39,6 +40,8 @@ import {
 
 
 
+=======
+>>>>>>> parent of e5548ba (Added flashcards)
 
 
 const RootPage = () => {
@@ -80,6 +83,7 @@ const RootPage = () => {
 
       <div>
 
+<<<<<<< HEAD
       <Card className="w-[350px], h-[365px]">
       <CardHeader>
         <CardTitle>Create ToDo</CardTitle>
@@ -199,6 +203,19 @@ const RootPage = () => {
               </div>
               
               <div className="mt-24">
+=======
+
+
+              <Calendar
+            mode="single"
+            selected={date}
+            onSelect={setDate}
+            className="rounded-md border"
+          />
+
+</div>
+       <div className="mt-10">
+>>>>>>> parent of e5548ba (Added flashcards)
         <Heading
             title="Conversation"
             description="Ask your friend a question"
