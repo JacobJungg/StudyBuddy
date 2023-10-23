@@ -18,6 +18,7 @@ import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { formSchema } from "./constants";
 import { Calendar } from "@/components/ui/calendar"
 <<<<<<< HEAD
+<<<<<<< HEAD
 import {
   Card,
   CardContent,
@@ -37,6 +38,8 @@ import {
 
 
 
+=======
+>>>>>>> parent of e5548ba (Added flashcards)
 
 
 
@@ -83,6 +86,7 @@ const RootPage = () => {
 
       <div>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
       <Card className="w-[350px], h-[365px]">
       <CardHeader>
@@ -213,6 +217,17 @@ const RootPage = () => {
             className="rounded-md border"
           />
 
+=======
+
+
+              <Calendar
+            mode="single"
+            selected={date}
+            onSelect={setDate}
+            className="rounded-md border"
+          />
+
+>>>>>>> parent of e5548ba (Added flashcards)
 </div>
        <div className="mt-10">
 >>>>>>> parent of e5548ba (Added flashcards)
