@@ -21,9 +21,22 @@ import {
   Card,
   CardContent,
   CardDescription,
+  
+  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/card"
+import { Label } from "@/components/ui/label"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
+
+
+
 
 
 
@@ -49,21 +62,69 @@ const RootPage = () => {
 
     return (
         //Margain move everything down (to close to header)
-        <div className="mt-10">
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <img src="https://media.tenor.com/1VEnfKkMGikAAAAd/lofi-girl-music.gif" />
+<div className="mt-10">
+  <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+  
+    <div>
+    <Calendar
+        mode="single"
+        selected={date}
+        onSelect={setDate}
+        className="rounded-md border"
+        style={{ width: '300px', height: '365px' }} // Adjust the width and height as needed
+      />
+    </div>
 
+    <div>
+      <img src="https://media.tenor.com/1VEnfKkMGikAAAAd/lofi-girl-music.gif" />
+    </div>
 
+      <div>
 
-
-
-              <Calendar
-            mode="single"
-            selected={date}
-            onSelect={setDate}
-            className="rounded-md border"
-          />
+      <Card className="w-[350px], h-[365px]">
+      <CardHeader>
+        <CardTitle>Create ToDo</CardTitle>
+        <CardDescription>Add item to ToDo list</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <form>
+          <div className="grid w-full items-center gap-4">
+            <div className="flex flex-col space-y-1.5">
+              <Label htmlFor="name">Name</Label>
+              <Input id="name" placeholder="Name of your event" />
+            </div>
+            <div className="flex flex-col space-y-1.5">
+              <Label htmlFor="framework">Type</Label>
+              <Select>
+                <SelectTrigger id="framework">
+                  <SelectValue placeholder="Select" />
+                </SelectTrigger>
+                <SelectContent position="popper">
+                  <SelectItem value="next">School</SelectItem>
+                  <SelectItem value="sveltekit">Chore</SelectItem>
+                  <SelectItem value="astro">Hobby</SelectItem>
+                  <SelectItem value="nuxt">Other</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
           </div>
+        </form>
+      </CardContent>
+      <CardFooter className="flex justify-between">
+        <Button variant="outline">Cancel</Button>
+        <Button>Deploy</Button>
+      </CardFooter>
+    </Card>
+
+
+
+      </div>
+
+
+
+
+
+    </div>
           <div style={{ margin: '0 20px' }}>
 <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
                 <Card>
@@ -128,7 +189,7 @@ const RootPage = () => {
                       height: '100%',
                     }}
                     >
-                      <Plus width="40" height="40" fill="currentColor" />
+                      <Plus width="40" height="80" fill="currentColor" />
                     </div>
                     <p className="text-xs text-muted-foreground">    
                       Create new flashcard
@@ -138,7 +199,7 @@ const RootPage = () => {
               </div>
               </div>
               
-       <div className="mt-10">
+              <div className="mt-24">
         <Heading
             title="Conversation"
             description="Ask your friend a question"
