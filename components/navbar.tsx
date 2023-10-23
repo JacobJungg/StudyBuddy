@@ -4,6 +4,7 @@
 import Link from "next/link";
 import { UserButton } from "@clerk/nextjs";
 import { Kanit } from "next/font/google";
+import { BookOpenText   } from "lucide-react";
 
 //Local Imports
 import { cn } from "@/lib/utils";
@@ -22,13 +23,13 @@ export const Navbar = () => {
             <div className="flex items-center">          
                 <MobileSidebar />
                 <Link href="/">
-                    <h1 className={cn(
-                        "hidden md:block text-xl md:text-3xl font-bold text-primary", 
-                        font.className
-                    )}>
-                        StudyBuddy
+                 <h1 className={cn("hidden md:flex text-xl md:text-3xl font-bold text-primary", font.className)}>
+                    <span className="flex items-center">
+                            <BookOpenText  /> 
+                            <span className="ml-0">StudyBuddy</span>
+                        </span>
                     </h1>
-                </Link>
+              </Link>
             </div>
 
             <div className="flex items-center gap-x-3">
