@@ -5,6 +5,7 @@
 
 "use client";
 
+import * as React from "react"
 import * as z from "zod";
 import { MessagesSquare  } from "lucide-react";
 import { useForm } from "react-hook-form";
@@ -15,6 +16,8 @@ import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { formSchema } from "./constants";
+import { Calendar } from "@/components/ui/calendar"
+
 
 const RootPage = () => {
 
@@ -25,6 +28,7 @@ const RootPage = () => {
         }
       });
 
+      const [date, setDate] = React.useState<Date | undefined>(new Date())
       const isLoading = form.formState.isSubmitting;
   
       const onSubmit = async (values: z.infer<typeof formSchema>) => {
@@ -35,15 +39,27 @@ const RootPage = () => {
 
     return (
         //Margain move everything down (to close to header)
-        <div className="mt-4">
-        <div>
+        <div className="mt-10">
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <img src="https://media.tenor.com/1VEnfKkMGikAAAAd/lofi-girl-music.gif" />
 
+
+
+
+
+              <Calendar
+            mode="single"
+            selected={date}
+            onSelect={setDate}
+            className="rounded-md border"
+          />
+
+</div>
+       <div className="mt-10">
         <Heading
             title="Conversation"
-            description="Our most advanced conversation model."
+            description="Ask your friend a question"
             icon={MessagesSquare }
-            iconColor="text-violet-500"
-            bgColor="bg-violet-500/10"
         />
         
               <div className="px-4 lg:px-8">
@@ -77,7 +93,7 @@ const RootPage = () => {
                                         focus-visible:ring-transparent
                                         "
                                         disabled={isLoading} 
-                                        placeholder="Placeholder" 
+                                        placeholder="Whats the binary number for 13?" 
                                         {...field}
                                       />
                                     </FormControl>
