@@ -3,7 +3,7 @@
 //Global Imports
 import Link from "next/link";
 import { UserButton } from "@clerk/nextjs";
-import { Kanit } from "next/font/google";
+import { Comfortaa } from "next/font/google";
 import { BookOpenText   } from "lucide-react";
 
 //Local Imports
@@ -12,7 +12,7 @@ import { MobileSidebar } from "@/components/mobile-sidebar";
 import { ModeToggle } from "./mode-toggle";
 
 
-const font = Kanit({ weight: "600", subsets: ["latin"] });
+const font = Comfortaa({ weight: "600", subsets: ["latin"] });
 interface NavbarProps {
   isPro: boolean;
 }
