@@ -37,24 +37,17 @@ import {
 } from "@/components/ui/command"
 
 
+import { Conversation } from "@/components/conversation";
 
 const RootPage = () => {
 
-    const form = useForm<z.infer<typeof formSchema>>({
-        resolver: zodResolver(formSchema),
-        defaultValues: {
-          prompt: ""
-        }
-      });
-
-      const [date, setDate] = React.useState<Date | undefined>(new Date())
-      const isLoading = form.formState.isSubmitting;
-  
-      const onSubmit = async (values: z.infer<typeof formSchema>) => {
-        console.log(values)
-      }
 
 
+  return (
+    <div className="h-full p-4 space-y-2">
+  <Conversation />
+    </div>
+  )
 
 }
 
