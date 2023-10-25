@@ -22,7 +22,7 @@ export const ChatClient = () => {
     };
     const systemMessage: ChatMessageProps = {
       role: "system",
-      content: "Error",
+      content: "Error, please try again",
     };
 
     setIsLoading(true); 
@@ -35,7 +35,7 @@ export const ChatClient = () => {
       setMessages((current) => [...current, systemMessage]);
       setIsLoading(false); // Set loading state to false after animation
     }, 3000); 
-
+    
     setInput("");
   };
 

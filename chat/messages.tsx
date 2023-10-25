@@ -37,7 +37,7 @@ export const ChatMessages = ({
       <ChatMessage
         isLoading={fakeLoading}
         role="system"
-        content={`Hello`}
+        content={`Hi, I'm ChatBot!`}
       />
       {messages.map((message) => (
         <ChatMessage
