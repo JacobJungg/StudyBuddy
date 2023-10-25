@@ -37,7 +37,7 @@ import {
 } from "@/components/ui/command"
 
 
-import { Conversation } from "@/components/conversation";
+import { ChatClient } from "@/components/conversation";
 
 const RootPage = () => {
 
@@ -45,7 +45,7 @@ const RootPage = () => {
 
   return (
     <div className="h-full p-4 space-y-2">
-  <Conversation />
+  <ChatClient />
     </div>
   )
 
