@@ -1,6 +1,4 @@
-import { redirect } from "next/navigation";
 import { auth, redirectToSignIn } from "@clerk/nextjs";
-import { ChatClient } from "@/components/conversation";
 
 interface ChatIdPageProps {
   params: {
@@ -8,9 +6,7 @@ interface ChatIdPageProps {
   }
 }
 
-const ChatIdPage = async ({
-  params
-}: ChatIdPageProps) => {
+const ChatIdPage = async ({}: ChatIdPageProps) => {
   const { userId } = auth();
 
   if (!userId) {
