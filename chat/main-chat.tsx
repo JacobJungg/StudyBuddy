@@ -7,7 +7,7 @@ import { ChatMessageProps } from "@/chat/message";
 export const ChatClient = () => {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState<ChatMessageProps[]>([]);
-  const isLoading = false;
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInput(e.target.value);
@@ -25,8 +25,16 @@ export const ChatClient = () => {
       content: "Error",
     };
 
+    setIsLoading(true); 
+
     setMessages((current) => [...current, userMessage]);
-    setMessages((current) => [...current, systemMessage]);
+
+
+
+    setTimeout(() => {
+      setMessages((current) => [...current, systemMessage]);
+      setIsLoading(false); // Set loading state to false after animation
+    }, 3000); 
 
     setInput("");
   };
