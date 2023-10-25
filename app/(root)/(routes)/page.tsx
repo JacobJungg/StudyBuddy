@@ -6,7 +6,7 @@
 "use client";
 
 import * as React from "react"
-import { ChatClient } from "@/chat/conversation";
+import { ChatClient } from "@/chat/main-chat";
 
 const RootPage = () => {
 
