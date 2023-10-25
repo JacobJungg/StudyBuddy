@@ -1,8 +1,8 @@
 import { FormEvent, useState } from "react";
-import { ChatForm } from "@/components/conversation-form";
-import { ChatHeader } from "@/components/conversation-header";
-import { ChatMessages } from "@/components/conversation-messages";
-import { ChatMessageProps } from "@/components/conversation-message";
+import { ChatForm } from "@/chat/conversation-form";
+import { ChatHeader } from "@/chat/conversation-header";
+import { ChatMessages } from "@/chat/conversation-messages";
+import { ChatMessageProps } from "@/chat/conversation-message";
 
 export const ChatClient = () => {
   const [input, setInput] = useState("");

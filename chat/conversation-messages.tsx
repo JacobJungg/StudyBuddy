@@ -2,7 +2,7 @@
 
 import { ElementRef, useEffect, useRef, useState } from "react";
 
-import { ChatMessage, ChatMessageProps } from "@/components/conversation-message";
+import { ChatMessage, ChatMessageProps } from "@/chat/conversation-message";
 
 interface ChatMessagesProps {
   messages: ChatMessageProps[];

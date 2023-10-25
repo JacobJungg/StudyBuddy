@@ -1,12 +1,8 @@
-import { ChevronLeft, Edit, MessagesSquare, MoreVertical, Trash } from "lucide-react";
+import { ChevronLeft, MessagesSquare } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
 import { BotAvatar } from "@/components/bot-avatar"; // Import the BotAvatar component
-
-interface ChatHeaderProps {
-  companion: React.ReactElement; // Expecting a React component
-}
 
 export const ChatHeader = () => {
   const router = useRouter();
