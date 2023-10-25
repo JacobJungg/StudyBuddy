@@ -6,10 +6,24 @@
  * @param navbar Calling from @/components/sidebar
  * @return main page layout
  */
-
+import { MessagesSquare    } from "lucide-react";
 import { Navbar } from "@/components/navbar"
 import { Sidebar } from "@/components/sidebar";
-
+import {
+  Menubar,
+  MenubarCheckboxItem,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarRadioGroup,
+  MenubarRadioItem,
+  MenubarSeparator,
+  MenubarShortcut,
+  MenubarSub,
+  MenubarSubContent,
+  MenubarSubTrigger,
+  MenubarTrigger,
+} from "@/components/ui/menubar"
 
 const RootLayout = async ({
   children
@@ -27,7 +41,20 @@ const RootLayout = async ({
       <Sidebar />
       </div>
       <main className="md:pl-20 pt-16 h-full">
-        {children}
+        
+      <div className="fixed bottom-4 right-4">
+      <Menubar>
+        <MenubarMenu>
+          <MenubarTrigger><MessagesSquare/></MenubarTrigger>
+          <MenubarContent>
+               {children}
+          </MenubarContent>
+        </MenubarMenu>
+      </Menubar> 
+      </div>  
+        
+        
+        
       </main>
     </div>
    );
