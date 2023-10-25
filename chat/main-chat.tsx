@@ -20,8 +20,13 @@ export const ChatClient = () => {
       role: "user",
       content: input,
     };
+    const systemMessage: ChatMessageProps = {
+      role: "system",
+      content: "Error",
+    };
 
     setMessages((current) => [...current, userMessage]);
+    setMessages((current) => [...current, systemMessage]);
 
     setInput("");
   };
