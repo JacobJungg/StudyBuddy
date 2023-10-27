@@ -1,10 +1,10 @@
 /**
  * StudyBuddy Jacob Jung
  * Layout for main page
- * 
- * @param sidebar Calling from @/components/navbar
- * @param navbar Calling from @/components/sidebar
- * @return main page layout
+ * Setting Navbar, Sidebar and ChatBot as they
+ * will be the same on every page. Calling "chidlren"
+ * from whichever page is in use. Children will fill
+ * the pages content.
  */
 import { MessagesSquare    } from "lucide-react";
 import { Navbar } from "@/components/navbar"
@@ -31,25 +31,22 @@ const RootLayout = async ({
     <div className="h-full">
       <Navbar />
       <div className="hidden md:flex mt-16 h-full w-20 flex-col fixed inset-y-0">
-      <Sidebar />
+        <Sidebar />
       </div>
       <main className="md:pl-20 pt-16 h-full">
-      {children} 
-      <div className="fixed bottom-4 right-4">
-      <Menubar>
-        <MenubarMenu>
-          <MenubarTrigger><MessagesSquare/></MenubarTrigger>
-          <MenubarContent>
-            <div className="h-full p-4 space-y-2">
-              <ChatClient />
-            </div>
-          </MenubarContent>
-        </MenubarMenu>
-      </Menubar> 
-      </div>  
-        
-        
-        
+        {children} 
+        <div className="fixed bottom-4 right-4">
+          <Menubar>
+            <MenubarMenu>
+              <MenubarTrigger><MessagesSquare/></MenubarTrigger>
+              <MenubarContent>
+                <div className="h-full p-4 space-y-2">
+                  <ChatClient />
+                </div>
+              </MenubarContent>
+            </MenubarMenu>
+          </Menubar> 
+        </div>  
       </main>
     </div>
    );
