@@ -16,7 +16,7 @@ import {
   MenubarTrigger,
 } from "@/components/ui/menubar"
 
-import { ChatClient } from "@/components/chat/main-chat";
+import { ChatClient } from "@/components/chatbot/main-chat";
 
 const RootLayout = async ({
   children
