@@ -1,3 +1,4 @@
+"use client";
 import { FormEvent, useState } from "react";
 import { ChatForm } from "@/components/chat/form";
 import { ChatHeader } from "@/components/chat/header";
