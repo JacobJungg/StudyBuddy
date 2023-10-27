@@ -3,7 +3,7 @@ import { Copy, BookOpenText } from "lucide-react"; // Import BookOpenText
 import { useTheme } from "next-themes";
 
 import { cn } from "@/lib/utils";
-import { UserAvatar } from "@/components/avatar/user-avatar";
+import { UserAvatar } from "@/components/chatbot/user-avatar";
 import { Button } from "@/components/ui/button";
 
 export interface ChatMessageProps {
