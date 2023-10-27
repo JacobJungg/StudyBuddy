@@ -2,7 +2,7 @@ import { ChevronLeft} from "lucide-react";
 import { useRouter } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
-import { BotAvatar } from "@/components/bot-avatar"; // Import the BotAvatar component
+import { BotAvatar } from "@/components/avatar/bot-avatar"; // Import the BotAvatar component
 
 export const ChatHeader = () => {
   const router = useRouter();
