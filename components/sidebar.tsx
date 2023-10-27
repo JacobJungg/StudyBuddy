@@ -23,17 +23,17 @@ export const Sidebar = () => {
         },
         {
           icon: MenuSquare  ,
-          href: '/flashcard',
+          href: '/flashcards',
           label: "Flashcards",
         },
         {
           icon: FileText ,
-          href: '/quiz',
+          href: '/quizzes',
           label: "Quizzes",
         },
         {
           icon: BookOpenText,
-          href: '/chat',
+          href: '/chatbot',
           label: "ChatBot",
         },
         {
