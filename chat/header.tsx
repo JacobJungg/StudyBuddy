@@ -1,12 +1,8 @@
-import { ChevronLeft, Edit, MessagesSquare, MoreVertical, Trash } from "lucide-react";
+import { ChevronLeft} from "lucide-react";
 import { useRouter } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
 import { BotAvatar } from "@/components/bot-avatar"; // Import the BotAvatar component
-
-interface ChatHeaderProps {
-  companion: React.ReactElement; // Expecting a React component
-}
 
 export const ChatHeader = () => {
   const router = useRouter();
@@ -26,7 +22,6 @@ export const ChatHeader = () => {
           <div className="flex items-center gap-x-2">
             <p className="font-bold">ChatBot</p>
             <div className="flex items-center text-xs text-muted-foreground">
-              <MessagesSquare className="w-3 h-3 mr-1" />
             </div>
           </div>
         </div>

@@ -1,13 +1,13 @@
 import { FormEvent, useState } from "react";
-import { ChatForm } from "@/components/conversation-form";
-import { ChatHeader } from "@/components/conversation-header";
-import { ChatMessages } from "@/components/conversation-messages";
-import { ChatMessageProps } from "@/components/conversation-message";
+import { ChatForm } from "@/chat/form";
+import { ChatHeader } from "@/chat/header";
+import { ChatMessages } from "@/chat/messages";
+import { ChatMessageProps } from "@/chat/message";
 
 export const ChatClient = () => {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState<ChatMessageProps[]>([]);
-  const isLoading = false;
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInput(e.target.value);
@@ -20,9 +20,22 @@ export const ChatClient = () => {
       role: "user",
       content: input,
     };
+    const systemMessage: ChatMessageProps = {
+      role: "system",
+      content: "Error, please try again",
+    };
+
+    setIsLoading(true); 
 
     setMessages((current) => [...current, userMessage]);
 
+
+
+    setTimeout(() => {
+      setMessages((current) => [...current, systemMessage]);
+      setIsLoading(false); // Set loading state to false after animation
+    }, 3000); 
+    
     setInput("");
   };
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { Home, Plus, Settings } from "lucide-react";
+import { Home, FileText, MenuSquare, Settings, BookOpenText } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 
 import { cn } from "@/lib/utils";
@@ -22,9 +22,19 @@ export const Sidebar = () => {
           label: "Home",
         },
         {
-          icon: Plus,
-          href: '/flashcard/new',
-          label: "Create",
+          icon: MenuSquare  ,
+          href: '/flashcard',
+          label: "Flashcards",
+        },
+        {
+          icon: FileText ,
+          href: '/quiz',
+          label: "Quizzes",
+        },
+        {
+          icon: BookOpenText,
+          href: '/chat',
+          label: "ChatBot",
         },
         {
           icon: Settings,

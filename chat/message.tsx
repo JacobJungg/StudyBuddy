@@ -3,7 +3,6 @@ import { Copy, BookOpenText } from "lucide-react"; // Import BookOpenText
 import { useTheme } from "next-themes";
 
 import { cn } from "@/lib/utils";
-import { BotAvatar } from "@/components/bot-avatar";
 import { UserAvatar } from "@/components/user-avatar";
 import { Button } from "@/components/ui/button";
 

@@ -2,7 +2,7 @@
 
 import { ElementRef, useEffect, useRef, useState } from "react";
 
-import { ChatMessage, ChatMessageProps } from "@/components/conversation-message";
+import { ChatMessage, ChatMessageProps } from "@/chat/message";
 
 interface ChatMessagesProps {
   messages: ChatMessageProps[];
@@ -37,7 +37,7 @@ export const ChatMessages = ({
       <ChatMessage
         isLoading={fakeLoading}
         role="system"
-        content={`Hello`}
+        content={`Hi, I'm ChatBot!`}
       />
       {messages.map((message) => (
         <ChatMessage
