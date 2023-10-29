@@ -104,7 +104,7 @@ export const Navbar = () => {
             </div>
             </HoverCardTrigger>
               <HoverCardContent>
-                Flashcards
+                Cards
             </HoverCardContent>
           </HoverCard>
 
