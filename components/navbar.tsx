@@ -20,46 +20,22 @@ import { BookOpenText   } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { MobileSidebar } from "@/components/mobile-sidebar";
 import { ModeToggle } from "./mode-toggle";
-
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card"
 
 const font = Comfortaa({ weight: "600", subsets: ["latin"] });
 export const Navbar = () => {
 
-    const pathname = usePathname();
-    const router = useRouter();
+  const pathname = usePathname();
+  const router = useRouter();
 
 
-    const onNavigate = (url: string) => {
-          return router.push(url);
-        }
-
-    const routes = [
-        {
-          icon: Home,
-          href: '/',
-          label: "Home",
-        },
-        {
-          icon: MenuSquare  ,
-          href: '/flashcards',
-          label: "Flashcards",
-        },
-        {
-          icon: FileText ,
-          href: '/quizzes',
-          label: "Quizzes",
-        },
-        {
-          icon: BookOpenText,
-          href: '/chatbot',
-          label: "ChatBot",
-        },
-        {
-          icon: Settings,
-          href: '/settings',
-          label: "Settings",
-        },
-      ];
+  const onNavigate = (url: string) => {
+    return router.push(url);
+  }
 
 
 
@@ -71,47 +47,131 @@ export const Navbar = () => {
 
 
 
-    return (
-        <div className="fixed w-full z-50 flex justify-between items-center py-2 px-4 h-16 ">
-            <div className="flex items-center">          
-                <MobileSidebar />
-                <Link href="/">
-                    <h1 className={cn("hidden md:flex text-xl md:text-3xl font-bold text-primary", font.className)}>
-                        <span className="flex items-center">
-                            <BookOpenText  /> 
-                            <span className="ml-0">
-                                StudyBuddy
-                            </span>
-                        </span>
-                    </h1>
-                </Link>
-            </div>
+
+  return (
+    <div className="fixed w-full z-50 flex justify-between items-center py-2 px-4 h-16 ">
+      <div className="flex items-center">          
+        <MobileSidebar />
+        <Link href="/">
+          <h1 className={cn("hidden md:flex text-xl md:text-3xl font-bold text-primary", font.className)}>
+            <span className="flex items-center">
+              <BookOpenText  /> 
+              <span className="ml-0">
+                StudyBuddy
+              </span>
+            </span>
+          </h1>
+        </Link>
+      </div>
 
 
 
-            <div className="flex flex-col h-full text-primary bg-secondary rounded-lg"> 
-            <div className=" flex-1 flex flex-wrap justify-center">
-        <div className="flex flex-row space-x-2">
-              {routes.map((route) => (
-                <div
-                  onClick={() => onNavigate(route.href)}
-                  key={route.href}
-                  className={cn(
-                    "text-muted-foreground text-xs group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-primary hover:bg-primary/10 rounded-lg transition",
-                    pathname === route.href && "bg-primary/10 text-primary",
-                  )}
-                >
-                  <div className="flex flex-col gap-y-2 items-center flex-1">
-                    
-                    <route.icon className="h-5 w-5" />
-                    
-                  </div>
+      <div className="flex flex-col h-full text-primary bg-secondary rounded-lg"> 
+        <div className=" flex-1 flex flex-wrap justify-center">     
+          <div className="flex h-full flex-row space-x-2">
+
+          <HoverCard>
+            <HoverCardTrigger>
+              <div
+                onClick={() => onNavigate('/')}
+                className={cn(
+                  "text-muted-foreground text-xs group flex p-3 h-full w-full justify-start font-medium cursor-pointer hover:text-primary hover:bg-primary/10 rounded-lg transition",
+                  pathname === '/' && "bg-primary/10 text-primary"
+                )}
+              >
+                <div className="flex flex-col gap-y-2 items-center flex-1">
+                  <Home className="h-5 w-5" />
                 </div>
-              ))}
-            </div>
-            </div>
-        </div>
+              </div>
+            </HoverCardTrigger>
+              <HoverCardContent>
+                Home
+            </HoverCardContent>
+          </HoverCard>
 
+          <HoverCard>
+            <HoverCardTrigger>
+            <div
+              onClick={() => onNavigate('/flashcards')}
+              className={cn(
+                "text-muted-foreground text-xs group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-primary hover:bg-primary/10 rounded-lg transition",
+                pathname === '/flashcards' && "bg-primary/10 text-primary"
+              )}
+            >
+              <div className="flex flex-col gap-y-2 items-center flex-1">
+                <MenuSquare className="h-5 w-5" />
+              </div>
+            </div>
+            </HoverCardTrigger>
+              <HoverCardContent>
+                Flashcards
+            </HoverCardContent>
+          </HoverCard>
+
+
+          <HoverCard>
+            <HoverCardTrigger>
+            <div
+              onClick={() => onNavigate('/quizzes')}
+              className={cn(
+                "text-muted-foreground text-xs group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-primary hover:bg-primary/10 rounded-lg transition",
+                pathname === '/quizzes' && "bg-primary/10 text-primary"
+              )}
+            >
+              <div className="flex flex-col gap-y-2 items-center flex-1">
+                <FileText className="h-5 w-5" />
+              </div>
+            </div>
+            </HoverCardTrigger>
+              <HoverCardContent>
+                Quizzes
+            </HoverCardContent>
+          </HoverCard>
+
+
+          <HoverCard>
+            <HoverCardTrigger>
+            <div
+              onClick={() => onNavigate('/chatbot')}
+              className={cn(
+                "text-muted-foreground text-xs group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-primary hover:bg-primary/10 rounded-lg transition",
+                pathname === '/chatbot' && "bg-primary/10 text-primary"
+              )}
+            >
+              <div className="flex flex-col gap-y-2 items-center flex-1">
+                <BookOpenText className="h-5 w-5" />
+              </div>
+            </div>
+            </HoverCardTrigger>
+              <HoverCardContent>
+                ChatBot
+            </HoverCardContent>
+          </HoverCard>
+
+
+          <HoverCard>
+            <HoverCardTrigger>
+            <div
+              onClick={() => onNavigate('/settings')}
+              className={cn(
+                "text-muted-foreground text-xs group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-primary hover:bg-primary/10 rounded-lg transition",
+                pathname === '/settings' && "bg-primary/10 text-primary"
+              )}
+            >
+              <div className="flex flex-col gap-y-2 items-center flex-1">
+                <Settings className="h-5 w-5" />
+              </div>
+            </div>
+            </HoverCardTrigger>
+              <HoverCardContent>
+                Settings
+            </HoverCardContent>
+          </HoverCard>
+
+
+          </div>
+        </div>
+      </div>
 
 
 
