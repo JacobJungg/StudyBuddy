@@ -90,8 +90,7 @@ export const Navbar = () => {
 
 
             <div className="flex flex-col h-full text-primary bg-secondary rounded-lg"> 
-            <div className="p-3 flex-1 flex flex-wrap justify-center">
-            <div className="space-y-2">
+            <div className=" flex-1 flex flex-wrap justify-center">
         <div className="flex flex-row space-x-2">
               {routes.map((route) => (
                 <div
@@ -105,11 +104,10 @@ export const Navbar = () => {
                   <div className="flex flex-col gap-y-2 items-center flex-1">
                     
                     <route.icon className="h-5 w-5" />
-                    {route.label}
+                    
                   </div>
                 </div>
               ))}
-              </div>
             </div>
             </div>
         </div>
