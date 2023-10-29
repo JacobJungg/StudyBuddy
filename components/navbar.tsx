@@ -70,31 +70,14 @@ export const Navbar = () => {
         <div className=" flex-1 flex flex-wrap justify-center">     
           <div className="flex h-full flex-row space-x-2">
 
-          <HoverCard>
-            <HoverCardTrigger>
-              <div
-                onClick={() => onNavigate('/')}
-                className={cn(
-                  "text-muted-foreground text-xs group flex p-3 h-full w-full justify-start font-medium cursor-pointer hover:text-primary hover:bg-primary/10 rounded-lg transition",
-                  pathname === '/' && "bg-primary/10 text-primary"
-                )}
-              >
-                <div className="flex flex-col gap-y-2 items-center flex-1">
-                  <Home className="h-5 w-5" />
-                </div>
-              </div>
-            </HoverCardTrigger>
-              <HoverCardContent>
-                Home
-            </HoverCardContent>
-          </HoverCard>
+          
 
           <HoverCard>
             <HoverCardTrigger>
             <div
               onClick={() => onNavigate('/flashcards')}
               className={cn(
-                "text-muted-foreground text-xs group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-primary hover:bg-primary/10 rounded-lg transition",
+                "text-muted-foreground text-xs group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-primary hover:bg-primary/10 rounded-lg transition h-full ",
                 pathname === '/flashcards' && "bg-primary/10 text-primary"
               )}
             >
@@ -114,7 +97,7 @@ export const Navbar = () => {
             <div
               onClick={() => onNavigate('/quizzes')}
               className={cn(
-                "text-muted-foreground text-xs group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-primary hover:bg-primary/10 rounded-lg transition",
+                "text-muted-foreground text-xs group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-primary hover:bg-primary/10 rounded-lg transition h-full ",
                 pathname === '/quizzes' && "bg-primary/10 text-primary"
               )}
             >
@@ -134,7 +117,7 @@ export const Navbar = () => {
             <div
               onClick={() => onNavigate('/chatbot')}
               className={cn(
-                "text-muted-foreground text-xs group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-primary hover:bg-primary/10 rounded-lg transition",
+                "text-muted-foreground text-xs group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-primary hover:bg-primary/10 rounded-lg transition h-full ",
                 pathname === '/chatbot' && "bg-primary/10 text-primary"
               )}
             >
@@ -154,7 +137,7 @@ export const Navbar = () => {
             <div
               onClick={() => onNavigate('/settings')}
               className={cn(
-                "text-muted-foreground text-xs group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-primary hover:bg-primary/10 rounded-lg transition",
+                "text-muted-foreground text-xs group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-primary hover:bg-primary/10 rounded-lg transition h-full ",
                 pathname === '/settings' && "bg-primary/10 text-primary"
               )}
             >
