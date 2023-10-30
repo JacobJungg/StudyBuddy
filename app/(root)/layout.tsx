@@ -35,7 +35,7 @@ const RootLayout = async ({
     <div className="h-full">
       <Navbar />
       
-      <main className="md:pl-20 pt-16 h-full">
+      <main className="md:pl-20 pr-10 pt-16 h-full">
         {children} 
         <div className="fixed bottom-4 right-4">
           <Menubar>

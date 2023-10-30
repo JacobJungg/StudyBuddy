@@ -20,7 +20,7 @@ const AuthLayout = ({
       <div className="hidden md:flex mt-16 h-full w-20 flex-col fixed inset-y-0">
       <Sidebar />
       </div>
-      <main className="md:pl-20 pt-16 h-full">
+      <main className="md:pl-10 pr-10 pt-16 h-full">
         <div className="flex justify-center items-center h-full">
           {children}
         </div>
