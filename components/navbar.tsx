@@ -132,7 +132,27 @@ export const Navbar = () => {
           </HoverCard>
 
 
-          <HoverCard>
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+            <div className="flex items-center gap-x-3">
+                <ModeToggle />    
+
+
+                <div className="flex flex-col h-full text-primary bg-secondary rounded-lg"> 
+        <div className=" flex-1 flex flex-wrap justify-center">     
+          <div className="flex h-full flex-row space-x-2">
+                <HoverCard>
             <HoverCardTrigger>
             <div
               onClick={() => onNavigate('/settings')}
@@ -158,13 +178,8 @@ export const Navbar = () => {
 
 
 
-
-
-
-
-
-            <div className="flex items-center gap-x-3">
-                <ModeToggle />        
+                
+                    
                 <UserButton />
             </div>    
         </div>       
