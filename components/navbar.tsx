@@ -6,7 +6,7 @@
 "use client";
 
 
-import { Home, FileText, MenuSquare, Settings,  } from "lucide-react";
+import { FileText, MenuSquare, Settings,  } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 
 
