@@ -3,7 +3,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 const AuthLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex h-full w-full">
-      <div className="h-full w-1/2">
+      <div className="h-full w-1/2" style={{ background: "linear-gradient(135deg, #FFA500, #FF6347)" }}>
       <div className="absolute bottom-10 left-10 text-left">
           <h2 className="text-5xl font-bold">StudyBuddy</h2>
           <p className="text-4xl">Dive Into Learning</p>
