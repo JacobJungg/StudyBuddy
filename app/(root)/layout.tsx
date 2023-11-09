@@ -27,7 +27,6 @@ const RootLayout = async ({
       
       <main className="md:pl-20 pr-10 pt-16 h-full">
         {children} 
-         
       </main>
     </div>
    );
