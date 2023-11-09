@@ -2,17 +2,15 @@
  * StudyBuddy Jacob Jung
  * Settings page
  */
-
+"use client"
 import * as React from "react"
 import { ChatDiv } from "@/components/chatbot/chatbotdiv"
 import { ProfileForm } from "@/app/(root)/(routes)/settings/profile-form"
 import { Separator } from "@/components/ui/separator"
-interface SettingsLayoutProps {
-  children: React.ReactNode
-}
+
 import Image from "next/image"
 
-export default function SettingsLayout({ children }: SettingsLayoutProps) {
+const RootPage = () => {
   return (
     <>
       <div className="md:hidden">
@@ -76,3 +74,5 @@ export default function SettingsLayout({ children }: SettingsLayoutProps) {
     </>
   )
 }
+
+export default RootPage;
