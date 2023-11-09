@@ -53,7 +53,7 @@ export const Navbar = () => {
       <div className="flex items-center">          
         <MobileSidebar />
         <Link href="/">
-          <h1 className={cn("hidden md:flex text-xl md:text-3xl font-bold text-primary", font.className)}>
+          <h1 className={cn("hidden md:flex text-xl md:text-3xl font-bold ", font.className)}>
             <span className="flex items-center">
               <BookOpenText  /> 
               <span className="ml-0">
