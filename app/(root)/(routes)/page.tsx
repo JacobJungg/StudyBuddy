@@ -12,8 +12,6 @@ import {Dashboardbutton} from "@/components/dashboard-redirects"
 const RootPage = () => {
   return (
     <div> 
-      Home
-      
       <Dashboardbutton></Dashboardbutton>
       <ChatDiv></ChatDiv>
     </div>
