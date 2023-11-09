@@ -73,12 +73,12 @@ export const Dashboardbutton = () => {
               )}
             >
                 
-                <div class="flex flex-col h-full w-full justify-center items-center bg-secondary">
-                  <div class="flex items-center justify-center h-1/2 w-full">
+                <div className="flex flex-col h-full w-full justify-center items-center bg-secondary">
+                  <div className="flex items-center justify-center h-1/2 w-full">
                     <MenuSquare className="h-5 w-5" />
                   </div>
-                  <div class="flex items-center justify-center h-1/2 w-full">
-                    <p class="text-1xl text-center">Practise with flashcards</p>
+                  <div className="flex items-center justify-center h-1/2 w-full">
+                    <p className="text-1xl text-center">Practise with flashcards</p>
                   </div>
                 </div>
               </div>
@@ -102,12 +102,12 @@ export const Dashboardbutton = () => {
                 pathname === '/quizzes' && "bg-primary/10 text-primary"
               )}
             >
-              <div class="flex flex-col h-full w-full justify-center items-center bg-secondary">
-                  <div class="flex items-center justify-center h-1/2 w-full">
+              <div className="flex flex-col h-full w-full justify-center items-center bg-secondary">
+                  <div className="flex items-center justify-center h-1/2 w-full">
                     <FileText className="h-5 w-5" />
                   </div>
-                  <div class="flex items-center justify-center h-1/2 w-full">
-                    <p class="text-1xl text-center">Test your knowledge with quizzes</p>
+                  <div className="flex items-center justify-center h-1/2 w-full">
+                    <p className="text-1xl text-center">Test your knowledge with quizzes</p>
                   </div>
                 </div>
               </div>
@@ -128,12 +128,12 @@ export const Dashboardbutton = () => {
                 pathname === '/chatbot' && "bg-primary/10 text-primary"
               )}
             >
-              <div class="flex flex-col h-full w-full justify-center items-center bg-secondary">
-                  <div class="flex items-center justify-center h-1/2 w-full">
+<div className="flex flex-col h-full w-full justify-center items-center bg-secondary">
+              <div className="flex items-center justify-center h-1/2 w-full">
                     <BookOpenText className="h-5 w-5" />
                   </div>
-                  <div class="flex items-center justify-center h-1/2 w-full">
-                    <p class="text-1xl text-center">Talk to an AI</p>
+                  <div className="flex items-center justify-center h-1/2 w-full">
+                    <p className="text-1xl text-center">Talk to an AI</p>
                   </div>
                 </div>
               </div>
