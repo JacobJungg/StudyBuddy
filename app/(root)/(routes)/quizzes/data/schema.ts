@@ -5,7 +5,7 @@ import { z } from "zod"
 export const quizSchema = z.object({
   id: z.string(),
   title: z.string(),
-  status: z.string(),
+  difficulty: z.string(),
   label: z.string(),
   author: z.string(),
 })
