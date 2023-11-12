@@ -5,7 +5,7 @@ import { ColumnDef } from "@tanstack/react-table"
 import { Badge } from "@/components/ui/badge"
 import { Checkbox } from "@/components/ui/checkbox"
 
-import { labels, authors, statuses } from "@/app/(root)/(routes)/quizzes/data/data"
+import { labels, authors, difficulties } from "@/app/(root)/(routes)/quizzes/data/data"
 import { Quiz } from "@/app/(root)/(routes)/quizzes/data/schema"
 import { DataTableColumnHeader } from "./data-table-column-header"
 import { DataTableRowActions } from "./data-table-row-actions"
@@ -60,25 +60,25 @@ export const columns: ColumnDef<Quiz>[] = [
     },
   },
   {
-    accessorKey: "status",
+    accessorKey: "difficulty",
     header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="Status" />
+      <DataTableColumnHeader column={column} title="Difficulty" />
     ),
     cell: ({ row }) => {
-      const status = statuses.find(
-        (status) => status.value === row.getValue("status")
+      const difficulty = difficulties.find(
+        (difficulty) => difficulty.value === row.getValue("difficulty")
       )
 
-      if (!status) {
+      if (!difficulty) {
         return null
       }
 
       return (
         <div className="flex w-[100px] items-center">
-          {status.icon && (
-            <status.icon className="mr-2 h-4 w-4 text-muted-foreground" />
+          {difficulty.icon && (
+            <difficulty.icon className="mr-2 h-4 w-4 text-muted-foreground" />
           )}
-          <span>{status.label}</span>
+          <span>{difficulty.label}</span>
         </div>
       )
     },
