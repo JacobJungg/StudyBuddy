@@ -23,7 +23,7 @@
   {
     "id": "9543",
     "title": "Formulating an essay",
-    "difficulty": "medium",
+    "difficulty": "fair",
     "label": "english",
     "author": "student"
   },
@@ -58,7 +58,7 @@
   {
     "id": "3662",
     "title": "Romeo and Juliet, motives motifs and genres.",
-    "difficulty": "medium",
+    "difficulty": "fair",
     "label": "english",
     "author": "studybuddy"
   },
@@ -72,7 +72,7 @@
   {
     "id": "5892",
     "title": "Impressionist Art Movement and Its Impact on Modern Painting",
-    "difficulty": "medium",
+    "difficulty": "fair",
     "label": "art",
     "author": "studybuddy"
   },
@@ -86,7 +86,7 @@
   {
     "id": "8791",
     "title": "Analyzing Symbolism in Classic Literature",
-    "difficulty": "medium",
+    "difficulty": "fair",
     "label": "english",
     "author": "student"
   },
@@ -107,14 +107,14 @@
   {
     "id": "9876",
     "title": "Environmental Science: Climate Change and Global Consequences",
-    "difficulty": "medium",
+    "difficulty": "fair",
     "label": "science",
     "author": "studybuddy"
   },
   {
     "id": "4563",
     "title": "Shakespearean Tragedies: Themes and Variations",
-    "difficulty": "medium",
+    "difficulty": "fair",
     "label": "english",
     "author": "studybuddy"
   },
@@ -128,7 +128,7 @@
   {
     "id": "2222",
     "title": "Renaissance Art: From Botticelli to Michelangelo",
-    "difficulty": "medium",
+    "difficulty": "fair",
     "label": "art",
     "author": "studybuddy"
   },
@@ -142,7 +142,7 @@
   {
     "id": "4444",
     "title": "Modernist Literature: Stream of Consciousness Narratives",
-    "difficulty": "medium",
+    "difficulty": "fair",
     "label": "english",
     "author": "student"
   },
@@ -163,14 +163,14 @@
   {
     "id": "7777",
     "title": "Ecology and Biodiversity: A Study of Ecosystems",
-    "difficulty": "medium",
+    "difficulty": "fair",
     "label": "science",
     "author": "studybuddy"
   },
   {
     "id": "8888",
     "title": "Shakespearean Comedy: Themes and Theatrical Techniques",
-    "difficulty": "medium",
+    "difficulty": "fair",
     "label": "english",
     "author": "studybuddy"
   }

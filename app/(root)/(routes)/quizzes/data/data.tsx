@@ -41,8 +41,8 @@ import {
       icon: SignalLow,
     },
     {
-      value: "medium",
-      label: "Medium",
+      value: "fair",
+      label: "Fair",
       icon: SignalHigh,
     },
     {
