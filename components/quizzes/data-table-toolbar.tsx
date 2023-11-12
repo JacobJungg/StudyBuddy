@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { DataTableViewOptions } from "@/components/quizzes/data-table-view-options"
 
-import { authors, statuses } from "@/app/(root)/(routes)/quizzes/data/data"
+import { authors, difficulties } from "@/app/(root)/(routes)/quizzes/data/data"
 import { DataTableFacetedFilter } from "./data-table-faceted-filter"
 
 interface DataTableToolbarProps<TData> {
@@ -30,11 +30,11 @@ export function DataTableToolbar<TData>({
           }
           className="h-8 w-[150px] lg:w-[250px]"
         />
-        {table.getColumn("status") && (
+        {table.getColumn("difficulty") && (
           <DataTableFacetedFilter
-            column={table.getColumn("status")}
-            title="Status"
-            options={statuses}
+            column={table.getColumn("difficulty")}
+            title="Difficulty"
+            options={difficulties}
           />
         )}
         {table.getColumn("author") && (
