@@ -1,13 +1,9 @@
 import { 
   MoveDown,
   MoveUp,
-  MoveRight,
-  MoveLeft,
   MoveVertical,
   EyeOff
-
 } from 'lucide-react';
-
   import { Column } from "@tanstack/react-table"
   
   import { cn } from "@/lib/utils"
@@ -16,7 +12,6 @@ import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
-    DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
   } from "@/components/ui/dropdown-menu"
@@ -49,7 +44,7 @@ import {
               {column.getIsSorted() === "desc" ? (
                 <MoveDown className="ml-2 h-4 w-4" />
               ) : column.getIsSorted() === "asc" ? (
-                <MoveDown className="ml-2 h-4 w-4" />
+                <MoveUp className="ml-2 h-4 w-4" />
               ) : (
                 <MoveVertical className="ml-2 h-4 w-4" />
               )}
