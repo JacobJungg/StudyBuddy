@@ -2,11 +2,9 @@ import {
   GraduationCap,
   Apple,
   BookOpenText,
-  CheckCircle2,
-  Circle,
-  CircleOff,
-  HelpCircle,
-  Timer
+  SignalLow,
+  SignalHigh,
+  Signal
 } from 'lucide-react';
 
   export const labels = [
@@ -36,31 +34,21 @@ import {
     },
   ]
   
-  export const statuses = [
+  export const difficulties = [
     {
-      value: "backlog",
-      label: "Backlog",
-      icon: HelpCircle,
+      value: "easy",
+      label: "Easy",
+      icon: SignalLow,
     },
     {
-      value: "todo",
-      label: "Todo",
-      icon: Circle,
+      value: "medium",
+      label: "Medium",
+      icon: SignalHigh,
     },
     {
-      value: "in progress",
-      label: "In Progress",
-      icon: Timer,
-    },
-    {
-      value: "done",
-      label: "Done",
-      icon: CheckCircle2,
-    },
-    {
-      value: "canceled",
-      label: "Canceled",
-      icon: CircleOff,
+      value: "hard",
+      label: "Hard",
+      icon: Signal,
     },
   ]
   
