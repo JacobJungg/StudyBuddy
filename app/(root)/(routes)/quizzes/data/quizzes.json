@@ -5,5 +5,62 @@
     "difficulty": "hard",
     "label": "math",
     "author": "student"
+  },
+  {
+    "id": "3242",
+    "title": "Greek sculptures, how the Gods influenced an era",
+    "difficulty": "easy",
+    "label": "art",
+    "author": "studybuddy"
+  },
+  {
+    "id": "1329",
+    "title": "Calculus II, Derivatives and Anti Derivatives",
+    "difficulty": "hard",
+    "label": "math",
+    "author": "teacher"
+  },
+  {
+    "id": "9543",
+    "title": "Formulating an essay",
+    "difficulty": "medium",
+    "label": "english",
+    "author": "student"
+  },
+  {
+    "id": "2345",
+    "title": "The Miranda Warning",
+    "difficulty": "hard",
+    "label": "law",
+    "author": "teacher"
+  },
+  {
+    "id": "1685",
+    "title": "Finding the slope of two points",
+    "difficulty": "easy",
+    "label": "math",
+    "author": "teacher"
+  },
+  {
+    "id": "1246",
+    "title": "Aztec culture, the difference and similarties with modern society",
+    "difficulty": "easy",
+    "label": "history",
+    "author": "student"
+  },
+  {
+    "id": "4326",
+    "title": "Calculating velocity between of an object in free fall",
+    "difficulty": "hard",
+    "label": "science",
+    "author": "teacher"
+  },
+  {
+    "id": "3662",
+    "title": "Romeo and Juliet, motives motifs and genres.",
+    "difficulty": "medium",
+    "label": "english",
+    "author": "studybuddy"
   }
+
 ]
