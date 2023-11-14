@@ -7,7 +7,7 @@
 
 import * as React from "react"
 import { ChatDiv } from "@/components/chatbot/chatbotdiv"
-import {Dashboardbutton} from "@/components/dashboard-redirects"
+import {Dashboardbutton} from "@/components/mainstructure/dashboard-redirects"
 
 const RootPage = () => {
   return (
