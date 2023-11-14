@@ -1,10 +1,9 @@
 "use client";
 
+//Global Imports
 import { Home, FileText, MenuSquare, Settings, BookOpenText } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
-
 import { cn } from "@/lib/utils";
-
 
 export const Sidebar = () => {
     const pathname = usePathname();
