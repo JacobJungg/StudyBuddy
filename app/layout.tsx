@@ -9,7 +9,7 @@ import { Inter } from 'next/font/google'
 //For authentication
 import { ClerkProvider } from '@clerk/nextjs'
 //For dark and light theme
-import { ThemeProvider } from '@/components/theme-provider'
+import { ThemeProvider } from '@/components/display/theme-provider'
 import type { Metadata } from 'next'
 import './globals.css'
 
