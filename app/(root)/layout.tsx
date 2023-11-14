@@ -7,7 +7,7 @@
  * the pages content.
  */
 
-import { Navbar } from "@/components/navbar"
+import { Navbar } from "@/components/mainstructure/navbar"
 const RootLayout = async ({
   children
 }: {
