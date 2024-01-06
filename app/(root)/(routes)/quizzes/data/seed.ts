@@ -17,5 +17,5 @@ fs.writeFileSync(
   JSON.stringify(quizzes, null, 2)
 )
 
-//Testing
+//Testing generation
 console.log("Quizzes generated.")
