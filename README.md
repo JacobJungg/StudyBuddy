@@ -7,6 +7,6 @@ StudyBuddy utilizes AI to...
 
 [Take a look!](https://studybuddy-jacobjunggs-projects.vercel.app/)
 
-**Currently in development!
+**Currently in development! Check it out!
 
 
