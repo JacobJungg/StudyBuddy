@@ -9,7 +9,7 @@ import { ChatDiv } from "@/components/chatbot/chatbotdiv"
 const RootPage = () => {
   return (
     <div>
-      Flashcards
+      Flashcards under development
       <ChatDiv></ChatDiv>
     </div>
   )
