@@ -1,0 +1,185 @@
+[
+  {
+    "id": "8349",
+    "title": "Differentiating equations between a line",
+    "difficulty": "hard",
+    "label": "math",
+    "author": "student"
+  },
+  {
+    "id": "3242",
+    "title": "Greek sculptures, how the Gods influenced an era",
+    "difficulty": "easy",
+    "label": "art",
+    "author": "studybuddy"
+  },
+  {
+    "id": "1329",
+    "title": "Calculus II, Derivatives and Anti Derivatives",
+    "difficulty": "hard",
+    "label": "math",
+    "author": "teacher"
+  },
+  {
+    "id": "9543",
+    "title": "Formulating an essay",
+    "difficulty": "fair",
+    "label": "english",
+    "author": "student"
+  },
+  {
+    "id": "2345",
+    "title": "The Miranda Warning",
+    "difficulty": "hard",
+    "label": "law",
+    "author": "teacher"
+  },
+  {
+    "id": "1685",
+    "title": "Finding the slope of two points",
+    "difficulty": "easy",
+    "label": "math",
+    "author": "teacher"
+  },
+  {
+    "id": "1246",
+    "title": "Aztec culture, the difference and similarties with modern society",
+    "difficulty": "easy",
+    "label": "history",
+    "author": "student"
+  },
+  {
+    "id": "4326",
+    "title": "Calculating velocity between of an object in free fall",
+    "difficulty": "hard",
+    "label": "science",
+    "author": "teacher"
+  },
+  {
+    "id": "3662",
+    "title": "Romeo and Juliet, motives motifs and genres.",
+    "difficulty": "fair",
+    "label": "english",
+    "author": "studybuddy"
+  },
+  {
+    "id": "7465",
+    "title": "Quantum Mechanics and Wave-Particle Duality",
+    "difficulty": "hard",
+    "label": "science",
+    "author": "teacher"
+  },
+  {
+    "id": "5892",
+    "title": "Impressionist Art Movement and Its Impact on Modern Painting",
+    "difficulty": "fair",
+    "label": "art",
+    "author": "studybuddy"
+  },
+  {
+    "id": "3158",
+    "title": "Advanced Topics in Linear Algebra",
+    "difficulty": "hard",
+    "label": "math",
+    "author": "teacher"
+  },
+  {
+    "id": "8791",
+    "title": "Analyzing Symbolism in Classic Literature",
+    "difficulty": "fair",
+    "label": "english",
+    "author": "student"
+  },
+  {
+    "id": "6547",
+    "title": "Legal Ethics: Navigating Gray Areas in the Legal Profession",
+    "difficulty": "hard",
+    "label": "law",
+    "author": "teacher"
+  },
+  {
+    "id": "1234",
+    "title": "Exploring the Industrial Revolution and Its Social Impact",
+    "difficulty": "easy",
+    "label": "history",
+    "author": "student"
+  },
+  {
+    "id": "9876",
+    "title": "Environmental Science: Climate Change and Global Consequences",
+    "difficulty": "fair",
+    "label": "science",
+    "author": "studybuddy"
+  },
+  {
+    "id": "4563",
+    "title": "Shakespearean Tragedies: Themes and Variations",
+    "difficulty": "fair",
+    "label": "english",
+    "author": "studybuddy"
+  },
+  {
+    "id": "1111",
+    "title": "Advanced Quantum Mechanics: Entanglement and Superposition",
+    "difficulty": "hard",
+    "label": "science",
+    "author": "teacher"
+  },
+  {
+    "id": "2222",
+    "title": "Renaissance Art: From Botticelli to Michelangelo",
+    "difficulty": "fair",
+    "label": "art",
+    "author": "studybuddy"
+  },
+  {
+    "id": "3333",
+    "title": "Differential Equations and Dynamical Systems",
+    "difficulty": "hard",
+    "label": "math",
+    "author": "teacher"
+  },
+  {
+    "id": "4444",
+    "title": "Modernist Literature: Stream of Consciousness Narratives",
+    "difficulty": "fair",
+    "label": "english",
+    "author": "student"
+  },
+  {
+    "id": "5555",
+    "title": "Criminal Law: Case Studies and Legal Precedents",
+    "difficulty": "hard",
+    "label": "law",
+    "author": "teacher"
+  },
+  {
+    "id": "6666",
+    "title": "The Age of Exploration: Impact on Global Trade",
+    "difficulty": "easy",
+    "label": "history",
+    "author": "student"
+  },
+  {
+    "id": "1432",
+    "title": "Digital Humanities: The Revolutionization of the camera",
+    "difficulty": "hard",
+    "label": "history",
+    "author": "teacher"
+  },
+  {
+    "id": "7777",
+    "title": "Ecology and Biodiversity: A Study of Ecosystems",
+    "difficulty": "fair",
+    "label": "science",
+    "author": "studybuddy"
+  },
+  {
+    "id": "8888",
+    "title": "Shakespearean Comedy: Themes and Theatrical Techniques",
+    "difficulty": "fair",
+    "label": "english",
+    "author": "studybuddy"
+  }
+
+]

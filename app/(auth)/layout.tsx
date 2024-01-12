@@ -1,32 +1,20 @@
-/**
- * StudyBuddy Jacob Jung
- * 
- * Landing page if havnt signed in
- * Add clerk form for sign up in middle of screen
- * Will redirect to [[...sign-in]] or [[...sign-up]]
- */
 
-import { Navbar } from "@/components/navbar"
-import { Sidebar } from "@/components/sidebar";
-
-const AuthLayout = ({
-  children
-}: {
-  children: React.ReactNode;
-}) => {
-  return ( 
-    <div className="h-full">
-      <Navbar />
-      <div className="hidden md:flex mt-16 h-full w-20 flex-col fixed inset-y-0">
-      <Sidebar />
-      </div>
-      <main className="md:pl-20 pt-16 h-full">
-        <div className="flex justify-center items-center h-full">
-          {children}
+const AuthLayout = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <div className="flex h-full w-full">
+      <div className="h-full w-1/2" style={{ background: "linear-gradient(135deg, #FFA500, #FF6347)" }}>
+      <div className="absolute bottom-10 left-10 text-left">
+          <h2 className="text-5xl font-bold text-white">StudyBuddy</h2>
+          <p className="text-4xl text-white">Dive Into Learning</p>
         </div>
-      </main>
+      </div>
+      
+      <div className="h-full w-1/2 flex justify-center items-center bg-secondary">
+     
+        {children}
+      </div>
     </div>
-   );
-}
- 
+  );
+};
+
 export default AuthLayout;

@@ -1,18 +1,15 @@
 /**
  * StudyBuddy Jacob Jung
- * Homepage
+ * Flashcards page
  */
-
-
 
 import * as React from "react"
 import { ChatDiv } from "@/components/chatbot/chatbotdiv"
-import {Dashboardbutton} from "@/components/mainstructure/dashboard-redirects"
 
 const RootPage = () => {
   return (
-    <div> 
-      <Dashboardbutton></Dashboardbutton>
+    <div>
+      Flashcards under development
       <ChatDiv></ChatDiv>
     </div>
   )
