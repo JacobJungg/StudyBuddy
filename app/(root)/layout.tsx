@@ -4,7 +4,7 @@
  * Setting Navbar, Sidebar and ChatBot as they
  * will be the same on every page. Calling "chidlren"
  * from whichever page is in use. Children will fill
- * the pages content.
+ * the screen pages content.
  */
 
 import { Navbar } from "@/components/mainstructure/navbar"
